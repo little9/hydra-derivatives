@@ -22,6 +22,7 @@ module Hydra::Derivatives::Processors
           { Ffmpeg::OUTPUT_OPTIONS => output_options, Ffmpeg::INPUT_OPTIONS => input_options }
         end
 
+        # Some of these methods might need to move to a module if they are needed by both Video::Processor and ActiveEncodeProcessor.
         def codecs(format)
           case format
           when 'mp4'

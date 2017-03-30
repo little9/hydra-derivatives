@@ -6,12 +6,14 @@ module Hydra::Derivatives
       autoload :Processor
     end
 
+    autoload :ActiveEncodeProcessor
     autoload :Audio
     autoload :Document
     autoload :Ffmpeg
     autoload :FullText
     autoload :Image
     autoload :Jpeg2kImage
+    autoload :NullProcessor
     autoload :RawImage
     autoload :ShellBasedProcessor
     autoload :Video
